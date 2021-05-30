@@ -1,3 +1,18 @@
+## Running it easily on your computer
+I'm planning on building an npm package that works like 'create-react-app', but in the in the meantime you can create a script with the following commands:
+
+```bash
+git clone git@github.com:eliasvelardezft/react-tailwind-template.git
+cd react-tailwind-template
+rm -rf .git
+npm install
+mv ./* ./.* ..
+cd ..
+rm -rf react-tailwind-template
+```
+You create a folder, cd to that folder and just call the script.
+
+
 ## tailwind.config.js
 
 Here you can modify or extend Tailwind functionalitites
