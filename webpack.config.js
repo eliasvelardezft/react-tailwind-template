@@ -5,7 +5,8 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, '/dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -25,11 +26,13 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            template: './src/index.html',
+            favicon: './src/img/icon.svg',
         })
     ],
     devServer: {
         contentBase: path.resolve(__dirname, 'dist'),
         watchContentBase: true,
+        historyApiFallback: true,
     },
 }
