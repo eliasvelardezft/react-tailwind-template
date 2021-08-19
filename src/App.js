@@ -1,6 +1,8 @@
+import React from 'react';
+
 const App = () => {
     return (
-        <h1 className='text-blue-500'>
+        <h1 className='text-red-500'>
             React TailwindCSS template!
         </h1>
     );
